@@ -101,7 +101,6 @@ while true; do
       NAS_HOSTNAME=$(nbtscan -q ${NAS_ID} | awk '{print $2}') 
       info "NAS hostname status: ${YELLOW}pass${NC} ( ${NAS_HOSTNAME} )"
       break
-      ;;
     else
       NAS_HOSTNAME=""
       info "NAS hostname status: ${RED}fail${NC} ( cannot map hostname )"
